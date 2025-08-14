@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<style>
+    li{
+        display: flex;
+        background-color: #3f3f46;
+        justify-content: space-between;
+        border-radius: 0.5rem;
+        padding:1.5%;
+        margin-top: 5%;
+    
+    }
+    li:hover{
+        background-color: #71717a;
+
+    }
+    .delete-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #b91c1c;
+        color: white;
+        border-radius: 0.5rem;
+        padding: 1.5%;
+
+    }
+</style>
+<body class="bg-zinc-900 text-white min-h-screen flex justify-center  items-center">
+
+<div class="flex justify-center  items-center  content-center ">
+    <div class="flex flex-col justify-center   m-5 p-6  border-2  bg-zinc-800 rounded-lg shadow-lg ">
+        <h1 class="font-bold flex justify-center p-4 ">To-Do-list</h1>
+        <div class="flex flex-col">
+            <input type="text" id = "task" class = "bg-zinc-700 p-2 rounded-lg outline-none" placeholder = "Add Task . . .">
+            <button id="add-btn" class="bg-purple-700 p-2 rounded-lg  hover:bg-purple-800 ">Add-Task</button>
+        
+        </div>
+        <ul id="to-do-list">
+    
+        </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
